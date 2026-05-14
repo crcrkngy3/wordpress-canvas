@@ -6,7 +6,7 @@
 
      <section class="mv-section section" id="mv">
         <div class="mv-main">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/mv.png" alt="メインビジュアル" class="main-visual">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/mv-2.png" alt="メインビジュアル" class="main-visual">
         </div>
       </section>
 
@@ -23,7 +23,7 @@
       </section>
 
 
-     <div class="shigotozukann-section" id="shigotozukann">
+     <div class="shigotozukann-section section" id="shigotozukann">
             <?php
               $args = array(
                   'post_type'      => 'post',
