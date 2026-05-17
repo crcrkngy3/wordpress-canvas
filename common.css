@@ -45,9 +45,10 @@ body{
   font-family: "big-caslon-fb", serif;
   color: #7E9A8E;
   text-decoration: none;
+  transition: .3s;
 }
 .header-logo a:hover {
-  transition: .3s;
+
   color: #06462a;
 }
 
@@ -68,10 +69,10 @@ body{
   padding: 5px 0;
   letter-spacing: .05em;
   text-decoration: none;
+  transition: .3s;
 }
 
 .gnav-item a:hover {
-  transition: .3s;
   color: #06462a;
 }
 
@@ -100,6 +101,11 @@ main {
   color: #7E9A8E;
   letter-spacing: .05em;
   text-decoration: none;
+  transition: .3s;
+}
+
+.footer-logo a:hover {
+  color: #06462a;
 }
 .footer-nav-list {
   display: flex;
@@ -117,10 +123,10 @@ main {
   padding: 5px 0;
   letter-spacing: .05em;
   text-decoration: none; 
+  transition: .3s;
 }
 
 .footer-nav-item a:hover {
-  transition: .3s;
   color: #06462a;
 }
 
@@ -136,7 +142,7 @@ main {
   transition: .3s;
 }
 .footer-sns img:hover  {
-  opacity: 0.7;
+ transform: translateY(-6px);
 }
 
 /* copyright */

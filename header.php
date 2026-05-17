@@ -18,6 +18,10 @@
     <?php if ( is_home() || is_front_page() ) : ?>
       <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/main.css">
     <?php endif; ?>
+<!-- page-contact.phpのときだけ contact.cssを読み込む -->
+    <?php if ( is_page('contact') ) : ?>
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/contact.css">
+<?php endif; ?>
   </head>
   
   <body>
