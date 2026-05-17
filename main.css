@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
-
-
+/* 共通部分 */
 
 .main-visual {
   width: 100%; 
   height: auto; 
+  padding-top: 80px;
 }
 
 .sub-visual{
@@ -14,3 +14,4 @@
    display: block;    
   margin: 0 auto;
 }
+

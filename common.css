@@ -14,7 +14,16 @@ body{
 .content {
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden; /* 💡これで横方向のはみ出しを強制的にカットします */
+  overflow-x: hidden; 
+}
+
+/* header */
+.header{
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #F5EEE2;
 }
 
 .header .container {
@@ -26,7 +35,7 @@ body{
 }
 
 .header-logo{
-   font-size: 32px;   
+  font-size: 32px;   
   font-weight: bold;
   line-height: 1.2;
   margin-right: 20px;
@@ -35,8 +44,106 @@ body{
 .header-logo a{
   font-family: "big-caslon-fb", serif;
   color: #7E9A8E;
+  text-decoration: none;
 }
 .header-logo a:hover {
   transition: .3s;
   color: #06462a;
 }
+
+.gnav-list{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.gnav-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.gnav-item a {
+  color: #7E9A8E;
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 0;
+  letter-spacing: .05em;
+  text-decoration: none;
+}
+
+.gnav-item a:hover {
+  transition: .3s;
+  color: #06462a;
+}
+
+/* main */
+main {
+  display: flex;
+  flex-direction: column; 
+  gap: 80px;             
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  background-color: #F5EEE2; 
+  padding: 60px 0 40px;      
+  text-align: center;       
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-logo a {
+  font-family: "big-caslon-fb", serif;
+  font-size: 32px;           
+  font-weight: bold;
+  color: #7E9A8E;
+  letter-spacing: .05em;
+  text-decoration: none;
+}
+.footer-nav-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 40px;
+  gap: 30px;            
+}
+
+.footer-nav-item a {
+  color: #7E9A8E;
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 0;
+  letter-spacing: .05em;
+  text-decoration: none; 
+}
+
+.footer-nav-item a:hover {
+  transition: .3s;
+  color: #06462a;
+}
+
+.footer-sns {
+  display: flex;
+  justify-content: center;
+  gap: 25px;                 
+  margin-bottom: 50px;
+}
+.footer-sns img {
+  width: 24px;              
+  height: auto;
+  transition: .3s;
+}
+.footer-sns img:hover  {
+  opacity: 0.7;
+}
+
+/* copyright */
+
+.copyright {
+  font-size: 10px;
+  color: #1a1a1a;
+  letter-spacing: .05em;
+}
+
