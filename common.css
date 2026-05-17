@@ -1,38 +1,20 @@
 @charset "UTF-8";
-/* ----------
-共通部分 
--------------*/
+
+/* ----------共通部分 -------------*/
 body{
-  font-family: "Hiragino Kaku Gothic ProN","Noto Sans JP", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+  font-family:"big-caslon-fb", "Philosopher", "Josefin Sans", "Libre Baskerville", "Shippori Mincho", "Zen Old Mincho", serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
   letter-spacing: .05em;
   color: #1a1a1a;
+  background-color: #ffffff;
 }
 
-
-.wrapper {
-    padding-top: 80px; 
-    width: 100%;
-    margin: 0 auto;
-}
-/*----------
- header 
- -----------*/
-.header{
-  position: fixed;
-  top: 0;
-  z-index: 1;
+.content {
   width: 100%;
-  background-color: #F5EEE2;
-}
-
-.header-top {
-  display: flex;
-  flex-direction: column; 
-  align-items: flex-start; 
-  gap: 10px; 
+  max-width: 100%;
+  overflow-x: hidden; /* 💡これで横方向のはみ出しを強制的にカットします */
 }
 
 .header .container {
@@ -42,6 +24,7 @@ body{
   padding: 0 40px; 
   height: 80px;    
 }
+
 .header-logo{
    font-size: 32px;   
   font-weight: bold;
@@ -49,7 +32,6 @@ body{
   margin-right: 20px;
   letter-spacing: .05em;
 }
-
 .header-logo a{
   font-family: "big-caslon-fb", serif;
   color: #7E9A8E;
@@ -58,96 +40,3 @@ body{
   transition: .3s;
   color: #06462a;
 }
-
-/* ナビゲーションメニュー（header） */
-
-
-.gnav-list{
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-}
-/* 最後の項目以外間に20px空ける */
-.gnav-item:not(:last-child) {
-  margin-right: 20px;
-}
-
-.gnav-item a {
-  color: #7E9A8E;
-  position: relative;
-  font-size: 13px;
-  font-weight: bold;
-  display: inline-block;
-  padding: 5px 0;
-  transition: .3s;
-  letter-spacing: .05em;
-}
-
-.gnav-item a:hover {
-  transition: .3s;
-  color: #06462a;
-}
-
-/*----------
- footer 
- -----------*/
-.footer {
-  background-color: #F5EEE2; 
-  padding: 60px 0 40px;      
-  text-align: center;       
-}
-
-.footer-logo {
-  margin-bottom: 30px;
-}
-
-.footer-logo a {
-   font-family: "big-caslon-fb", serif;
-  font-size: 32px;           
-  font-weight: bold;
-  color: #7E9A8E;
-  letter-spacing: .1em;
-}
-
-/*  ナビゲーションメニュー(footer)*/
-.footer-nav-list {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-bottom: 40px;
-  gap: 30px;                 
-}
-.footer-nav-item a {
-  color: #1a1a1a;            
-  font-size: 14px;
-  font-weight: bold;
-  transition: .3s;
-}
-.footer-nav-item a:hover {
-  color: #7E9A8E;
-}
-/* SNS */
-.footer-sns {
-  display: flex;
-  justify-content: center;
-  gap: 25px;                 
-  margin-bottom: 50px;
-}
-
-.footer-sns img {
-  width: 24px;              
-  height: auto;
-  transition: .3s;
-}
-
-.footer-sns a:hover img {
-  opacity: 0.7;
-}
-/* copyright */
-
-.copyright {
-  font-size: 10px;
-  color: #1a1a1a;
-  letter-spacing: .05em;
-}
-

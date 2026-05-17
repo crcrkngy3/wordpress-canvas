@@ -12,13 +12,13 @@
 
       <section class="intro-section section" id="intro">
          <div class="intro-main">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/導入文.png" alt="導入文" class="main-visual">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/導入文.png" alt="導入文" class="sub-visual">
          </div>
       </section>
 
       <section class="benefit-section section" id="benefit">
          <div class="benefit-main">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/ベネフィット.png" alt="ベネフィット" class="main-visual">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/ベネフィット.png" alt="ベネフィット" class="sub-visual">
          </div>
       </section>
 
@@ -60,12 +60,12 @@
           </div>
  <section class="strong-section section" id="strong">
          <div class="strong-main">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/強み.png" alt="強み" class="main-visual">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/強み.png" alt="強み" class="sub-visual">
       </div>
       </section>
 <section class="contact-section section" id="contact">
          <div class="contact-main">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/お問い合わせ誘導.png" alt="お問い合わせ誘導" class="main-visual">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/お問い合わせ誘導.png" alt="お問い合わせ誘導" class="sub-visual">
     </div>
       </section>
 

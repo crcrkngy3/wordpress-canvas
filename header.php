@@ -21,7 +21,6 @@
   </head>
   
   <body>
-    <div class="wrapper">
 
      <header class="header">
       <div class="container">
@@ -34,6 +33,7 @@
             <li class="gnav-item"><a href="<?php echo home_url('/contact'); ?>">お問い合わせ</a></li>
          </ul>
         </nav>
+
       </div>
     </header>
 
