@@ -1,3 +1,4 @@
+<!-- お問い合わせページのphpです -->
 <?php get_header(); ?>
 
 <main class="contact-page-main">

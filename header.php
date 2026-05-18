@@ -22,6 +22,10 @@
     <?php if ( is_page('contact') ) : ?>
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/contact.css">
 <?php endif; ?>
+<!-- category.phpのときだけ category.cssを読み込む -->
+    <?php if ( is_category('zukann') ) : ?>
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/category.css">
+<?php endif; ?>
   </head>
   
   <body>

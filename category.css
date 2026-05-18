@@ -1,0 +1,75 @@
+/* お仕事図鑑のページのみに反映されるcssです */
+
+
+.content {
+  padding-top: 80px; 
+  display: flex;
+  flex-direction: column;
+  gap: 80px; 
+}
+
+.main-visual {
+  width: 100%; 
+  height: auto; 
+  max-width: 1100px;
+  display: block;   
+  margin: 0 auto;
+}
+/* 記事部分の表示css */
+
+.archive-container .shigotozukann-list {
+  display: flex;
+  flex-direction: column; 
+  gap: 100px;             
+}
+
+.archive-container .shigotozukann-item {
+  width: 100% !important; 
+  margin: 0;
+}
+
+.archive-container .shigotozukann-item > a {
+  display: flex !important;
+  flex-direction: row;     
+  align-items: flex-start; 
+  text-decoration: none;
+  width: 100%;
+}
+
+.archive-container .shigotozukann-img {
+  width: 300px;           
+  max-width: 35%;         
+  flex-shrink: 0;         
+  background: none;       
+  padding: 0;             
+  border: none;           
+}
+
+.archive-container .shigotozukann-img img {
+  width: 350px;           /* 💡額縁が綺麗に見えるサイズに調整（お好みで変えてね） */
+  flex-shrink: 0;
+  z-index: 2;             /* 💡ピンクの箱より手前に浮かび上がらせる */
+  position: relative;
+ margin-right: -30px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15) !important;
+}
+.archive-container .news_post_small_title {
+  flex: 1;                /* 右側の残りの横幅をいっぱいに広げる */
+  background-color: #fcf1f1; /* 💡スクショに近い淡いピンクベージュ */
+  z-index: 1;             /* 額縁の下に潜り込ませる */
+  
+  /* 👇 内側の余白（パディング） */
+  /* 左側（padding-left）は額縁が重なってくるので、文字が隠れないように広め（60px）にあけます */
+  padding: 50px 40px 50px 60px; 
+  
+  min-height: 200px;      /* 箱が小さくなりすぎないように最低の高さを設定 */
+  display: flex;
+  align-items: center;    /* 中の文字を上下中央に揃える */
+}
+.archive-container .news_post_small_title p {
+  width: 100%;
+  text-align: right;      /* 文字を右寄せに */
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+}
