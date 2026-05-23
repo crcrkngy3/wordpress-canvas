@@ -1,4 +1,4 @@
-/* お仕事図鑑のページのみに反映されるcssです */
+/* お仕事図鑑のページのみに反映されるcssです 。PHPはcategory.phpとsingle.phpです*/
 
 
 .content {
@@ -16,60 +16,124 @@
   margin: 0 auto;
 }
 /* 記事部分の表示css */
-
+.archive-container {
+  max-width: 1000px;  
+  margin: 0 auto;    
+  padding: 0 20px;   
+  margin-bottom: 120px
+}
 .archive-container .shigotozukann-list {
   display: flex;
   flex-direction: column; 
-  gap: 100px;             
+  gap: 120px;            
 }
-
 .archive-container .shigotozukann-item {
-  width: 100% !important; 
+  width: 100%; 
   margin: 0;
 }
-
-.archive-container .shigotozukann-item > a {
+.archive-container .shigotozukann-link {
   display: flex !important;
-  flex-direction: row;     
-  align-items: flex-start; 
+  align-items: center!important; 
   text-decoration: none;
   width: 100%;
 }
-
+.archive-container .shigotozukann-item.is-odd .shigotozukann-link {
+  flex-direction: row !important; 
+}
+.archive-container .shigotozukann-item.is-even .shigotozukann-link {
+  flex-direction: row-reverse !important; 
+}
 .archive-container .shigotozukann-img {
-  width: 300px;           
-  max-width: 35%;         
-  flex-shrink: 0;         
-  background: none;       
-  padding: 0;             
-  border: none;           
+  width: 30% !important; 
+  flex-shrink: 0;        
+}
+.archive-container .shigotozukann-img img {
+  width: 100% !important;   
+  height: auto !important;  
+  display: block;
+}
+.archive-container .shigotozukann-body {
+  width: 70% !important; 
+}
+.archive-container .shigotozukann-body {
+  background-color: #fcf1f1 !important;
+  padding: 40px !important;              
+}
+.archive-container .shigotozukann-item.is-odd .shigotozukann-body {
+  text-align: right !important;
+}
+.archive-container .shigotozukann-item.is-even .shigotozukann-body {
+  text-align: left !important;
+}
+.archive-container .shigotozukann-item.is-odd .shigotozukann-body {
+  padding-left: 70px !important;
+}
+.archive-container .shigotozukann-item.is-even .shigotozukann-body {
+  padding-right: 70px !important;
 }
 
-.archive-container .shigotozukann-img img {
-  width: 350px;           /* 💡額縁が綺麗に見えるサイズに調整（お好みで変えてね） */
-  flex-shrink: 0;
-  z-index: 2;             /* 💡ピンクの箱より手前に浮かび上がらせる */
-  position: relative;
- margin-right: -30px;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15) !important;
+.archive-container .shigotozukann-link {
+  color: #1a1a1a !important;
 }
-.archive-container .news_post_small_title {
-  flex: 1;                /* 右側の残りの横幅をいっぱいに広げる */
-  background-color: #fcf1f1; /* 💡スクショに近い淡いピンクベージュ */
-  z-index: 1;             /* 額縁の下に潜り込ませる */
-  
-  /* 👇 内側の余白（パディング） */
-  /* 左側（padding-left）は額縁が重なってくるので、文字が隠れないように広め（60px）にあけます */
-  padding: 50px 40px 50px 60px; 
-  
-  min-height: 200px;      /* 箱が小さくなりすぎないように最低の高さを設定 */
-  display: flex;
-  align-items: center;    /* 中の文字を上下中央に揃える */
+
+.archive-container .shigotozukann-tags span {
+  color: #666666 !important;
 }
-.archive-container .news_post_small_title p {
-  width: 100%;
-  text-align: right;      /* 文字を右寄せに */
-  font-size: 20px;
-  color: #333;
-  margin: 0;
+
+.archive-container .shigotozukann-title {
+  font-size: 26px !important;       
+  font-weight: bold !important;     
+  margin-bottom: 12px !important;   
+  line-height: 1.4 !important;      
+}
+.archive-container .shigotozukann-catch {
+  font-size: 16px !important;      
+  line-height: 1.8 !important;      
+  margin-bottom: 20px !important;  
+}
+
+/* 記事をクリックしたときに開くページの設定 */
+.single-main {
+  max-width: 1000px;  
+  margin: 0 auto;    
+  padding: 60px 20px; 
+}
+
+.single-header-area {
+  display: flex;     
+  gap: 40px;          
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.single-img-box {
+  flex: 0 0 45%;     
+}
+
+.single-img-box img {
+  width: 100%;        
+  height: auto;      
+}
+.single-title-box {
+  flex: 1;         
+}
+
+.single-job-title {
+  font-size: 2rem;     
+  font-family: "Shippori Mincho", serif; 
+  color: #333333;      
+  margin-bottom: 15px;  
+  line-height: 1.4;     
+}
+
+.single-tags {
+  display: flex;     
+  flex-wrap: wrap;   
+  gap: 10px;          
+}
+
+.single-tags span {
+  font-size: 0.9rem;  
+  color: #c09e6c;    
+  font-weight: bold;  
 }

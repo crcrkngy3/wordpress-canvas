@@ -1,4 +1,4 @@
-
+<!-- TOPページのphpです -->
  <?php get_header();?>
 
 

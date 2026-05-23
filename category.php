@@ -1,5 +1,6 @@
+<!-- お仕事図鑑のページのphpです -->
 <?php get_header(); ?>
-<!-- お仕事図鑑のページです -->
+
  <main class="content">
    <section class="mv-section section" id="mv">
         <div class="mv-main">
@@ -8,14 +9,18 @@
    </section>
 
   <div class="archive-container">
-    
-    <h1 class="archive-title"><?php single_cat_title(); ?> 一覧</h1>
-
     <div class="shigotozukann-list">
-      <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        
-        <article class="shigotozukann-item">
-          <a href="<?php the_permalink(); ?>">
+
+      <?php 
+         $counter = 1; // 💡 1番目から数え始めるためのカウンターを用意
+         if (have_posts()) : while (have_posts()) : the_post(); 
+
+         // 💡 カウンターの数字を2で割って、余りがあれば（奇数なら）'is-odd'、なければ（偶数なら）'is-even' を変数に代入
+         $loop_class = ($counter % 2 !== 0) ? 'is-odd' : 'is-even';
+      ?>
+  
+  <article class="shigotozukann-item <?php echo $loop_class; ?>">
+          <a href="<?php the_permalink(); ?>" class="shigotozukann-link">
 
             <div class="shigotozukann-img">
               <?php if (has_post_thumbnail()) : ?>
@@ -25,14 +30,33 @@
               <?php endif; ?>
             </div>
             
-            <div class="news_post_small_title">
-              <p class="font-english">【<?php the_title(); ?>】</p>
-            </div>
+            <div class="shigotozukann-body">
+             <div class="shigotozukann-title">
+                  【<?php the_title(); ?>】
+             </div>
+  
+          <div class="shigotozukann-catch">
+                <?php the_excerpt(); ?>
+          </div>
 
+          <div class="shigotozukann-tags">
+            <?php
+               $post_tags = get_the_tags();
+              if ( $post_tags ) {
+              foreach ( $post_tags as $tag ) {
+              echo '<span>#' . $tag->name . '</span>';
+              }
+               }
+             ?>
+          </div>
+</div>
           </a>
         </article>
-
-      <?php endwhile; else : ?>
+<?php 
+    $counter++; // 💡 必ず「</article>」の後、かつ「endwhile;」の前に配置します
+    endwhile; 
+    else : 
+    ?>
         <p class="no-posts">まだ記事がありません。</p>
       <?php endif; ?>
     </div>
