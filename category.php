@@ -4,7 +4,7 @@
  <main class="content">
    <section class="mv-section section" id="mv">
         <div class="mv-main">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/shigoto-main.png" alt="main" class="main-visual">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/shigotozukan-main.webp" width="400" height="300" alt="main" class="main-visual">
         </div>
    </section>
 
@@ -24,9 +24,9 @@
 
             <div class="shigotozukann-img">
               <?php if (has_post_thumbnail()) : ?>
-                <?php the_post_thumbnail('large'); ?>
-              <?php else : ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/dummy.png" alt="イメージ画像">
+               <?php the_post_thumbnail('large', array('width' => '1200', 'height' => '800')); ?>
+               <?php else : ?>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/dummy.png"width="1200" height="800" alt="イメージ画像">
               <?php endif; ?>
             </div>
             

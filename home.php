@@ -6,19 +6,19 @@
 
      <section class="mv-section section" id="mv">
         <div class="mv-main">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/mv-2.png" alt="メインビジュアル" class="main-visual">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/main.webp" alt="メインビジュアル" class="main-visual">
         </div>
       </section>
 
       <section class="intro-section section" id="intro">
          <div class="intro-main">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/導入文.png" alt="導入文" class="sub-visual">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/introduction.webp" alt="導入文" class="sub-visual">
          </div>
       </section>
 
       <section class="benefit-section section" id="benefit">
          <div class="benefit-main">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/ベネフィット.png" alt="ベネフィット" class="sub-visual">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/benefit.webp" alt="ベネフィット" class="sub-visual">
          </div>
       </section>
 
@@ -58,14 +58,14 @@
              <?php wp_reset_postdata();?>
 
           </div>
- <section class="strong-section section" id="strong">
-         <div class="strong-main">
-          <img src="<?php echo get_template_directory_uri(); ?>/img/強み.png" alt="強み" class="sub-visual">
+ <section class="strong-section section" id"strength">
+         <div class"strength-main">
+          <img src="<?php echo get_template_directory_uri(); ?>/img/strength.webp" alt="強み" class="sub-visual">
       </div>
       </section>
 <section class="contact-section section" id="contact">
          <div class="contact-main">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/お問い合わせ誘導.png" alt="お問い合わせ誘導" class="sub-visual">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/contact.webp" alt="お問い合わせ誘導" class="sub-visual">
     </div>
       </section>
 
