@@ -8,9 +8,9 @@
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   background-image: url('img/contact-background.png');
-  background-position: center;  
   background-repeat: no-repeat;
-  background-position:center bottom;
+  background-position: bottom center; 
+  background-size: contain;
 }
 
 /* 以下contactフォームのデザイン */
@@ -84,6 +84,7 @@
   display: flex;
   align-items: center; 
   margin-bottom: 24px;
+  width: 100%;
 }
 .form-row-radio p {
   width: 180px;        
@@ -95,8 +96,9 @@
 
 .form-row-radio .wpcf7-radio {
   display: flex;
-  /* ここのギャップもう少し詰めたいかも */
-  gap: 10px;         
+  flex-wrap: wrap;    
+  gap: 8px 16px;      
+  flex: 1;           
 }
 
 .form-row-radio .wpcf7-list-item {

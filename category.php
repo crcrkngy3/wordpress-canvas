@@ -36,7 +36,7 @@
              </div>
   
           <div class="shigotozukann-catch">
-                <?php the_excerpt(); ?>
+                <?php echo get_the_excerpt(); ?>
           </div>
 
           <div class="shigotozukann-tags">
